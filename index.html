@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BGMI Rewards Collector</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <script>
+  if (!localStorage.getItem("bgmi_user")) {
+    window.location.href = "login.html";
+  }
+</script>
+
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="logo-area">
+      <img src="IMAGE/LOGO.jpg" alt="Logo" class="logo" />
+    </div>
+    <nav class="nav-buttons">
+   
+      <div class="dropdown">
+        <button class="nav-btn">More ▾</button>
+        <div class="dropdown-content">
+          <a href="#">Help Center</a>
+          <a href="#">Detail History</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- IMAGE SLIDER SECTION -->
+  <section class="slider-section">
+    <div class="slider">
+      <div class="slider-track" id="slider-track"></div>
+    </div>
+  </section>
+
+  <section class="reward-section">
+    <div class="reward-table" id="reward-grid"></div>
+  </section>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+</body>
+</html>
